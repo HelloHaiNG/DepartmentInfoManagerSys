@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.intelligent.pojo.Cost" table="t_cost" lazy="false">
+		<id name="cid" column="cid">
+			<generator class="native"></generator>
+		</id>
+		<property name="ctime" column="ctime" type="date"></property>
+		<property name="cgive" column="cgive"></property>
+		<property name="cmonth" column="cmonth"></property>
+		<property name="cname" column="cname"></property>
+		<property name="cdname" column="cdname"></property>
+		<property name="cpnumber" column="cpnumber"></property>
+		<property name="cbank" column="cbank"></property>
+		<property name="cfood" column="cfood"></property>
+		<property name="cfes" column="cfes"></property>
+		<property name="chouse" column="chouse"></property>
+		<property name="cwaelc" column="cwaelc"></property>
+		<property name="cdorm" column="cdorm"></property>
+		<property name="crecruit" column="crecruit"></property>
+		<property name="ctrain" column="ctrain"></property>
+		<property name="crepair1" column="crepair1"></property>
+		<property name="cdec" column="cdec"></property>
+		<property name="ctravel" column="ctravel"></property>
+		<property name="cbuy" column="cbuy"></property>
+		<property name="cprint" column="cprint"></property>
+		<property name="crent" column="crent"></property>
+		<property name="communic" column="communic"></property>
+		<property name="crepair2" column="crepair2"></property>
+		<property name="cbuild" column="cbuild"></property>
+		<property name="cserve" column="cserve"></property>
+		<property name="cseek" column="cseek"></property>
+		<property name="cstuff" column="cstuff"></property>
+		<property name="cvise" column="cvise"></property>
+		<property name="cair" column="cair"></property>
+		<property name="cpcar" column="cpcar"></property>
+		<property name="coil" column="coil"></property>
+		<property name="croad" column="croad"></property>
+		<property name="cstwacar" column="cstwacar"></property>
+		<property name="ctraffic" column="ctraffic"></property>
+		<property name="coutwork" column="coutwork"></property>
+		<property name="cstay" column="cstay"></property>
+		<property name="cothers" column="cothers"></property>
+		<property name="ctotal" column="ctotal"></property>
+		<property name="cstime" column="cstime" type="date"></property>
+		<property name="cetime" column="cetime" type="date"></property>
+		<property name="creason" column="creason"></property>
+		<property name="cremark" column="cremark"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.intelligent.pojo.Industry" table="t_industry"
+		lazy="false">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="istime" column="istime" type="date"></property>
+		<property name="ietime" column="ietime" type="date"></property>
+		<property name="idname" column="idname"></property>
+		<property name="ireqname" column="ireqname"></property>
+		<property name="ipnumber" column="ipnumber"></property>
+		<property name="ipname" column="ipname"></property>
+		<property name="iask" column="iask"></property>
+		<property name="iresname" column="iresname"></property>
+		<property name="ikind" column="ikind"></property>
+		<property name="itime" column="itime"></property>
+		<property name="imark" column="imark"></property>
+		<property name="istatus" column="istatus"></property>
+		<property name="iremark" column="iremark"></property>
+	</class>
+</hibernate-mapping>

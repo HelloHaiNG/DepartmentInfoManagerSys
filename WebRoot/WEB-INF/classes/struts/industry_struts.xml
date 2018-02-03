@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="industry" extends="struts-default">
+		<action name="industry_*" class="industryAction" method="{1}">
+		    <result name="toAddPage">/jsp/industry/view/add.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="list">/jsp/industry/view/view.jsp</result>
+			<result name="viewById">/jsp/industry/view/viewById.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="deleteById">/jsp/success.jsp</result>
+			<result name="listByOthers">/jsp/industry/view/viewByOthers.jsp</result>
+			<result name="viewByIdByOthers">/jsp/industry/view/viewByIdByOthers.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

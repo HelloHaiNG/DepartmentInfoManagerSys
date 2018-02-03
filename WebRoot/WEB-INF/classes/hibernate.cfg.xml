@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping  resource="com/intelligent/pojo/User.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Project.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Pcb.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Soft.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Machine.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Employee.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/EmployeeDelete.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Group.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Support.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Department.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Industry.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Cost.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Device.hbm.xml"/>
+        <mapping  resource="com/intelligent/pojo/Notice.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

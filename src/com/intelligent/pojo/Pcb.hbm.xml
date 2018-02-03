@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.Pcb" table="t_pcb" lazy="false">
+     <id name="pcbid" column="pcbid">
+         <generator class="native"></generator>
+     </id>
+     <property name="pcbnumber" column="pcbnumber"></property>
+     <property name="pcbname" column="pcbname"></property>
+     <property name="pcbversion" column="pcbversion"></property>
+     <property name="pcbremark" column="pcbremark"></property>
+     <many-to-one name="project" class="com.intelligent.pojo.Project" column="pnumber"></many-to-one>
+  </class>
+</hibernate-mapping>

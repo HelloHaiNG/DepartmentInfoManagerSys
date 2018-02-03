@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.intelligent.pojo.Support" table="t_support"
+		lazy="false">
+		<id name="sid" column="sid">
+			<generator class="native"></generator>
+		</id>
+		<property name="sstime" column="sstime" type="date"></property>
+		<property name="setime" column="setime" type="date"></property>
+		<property name="sprojectnumber" column="sprojectnumber"></property>
+		<property name="sprojectname" column="sprojectname"></property>
+		<property name="sreqname" column="sreqname"></property>
+		<property name="skind" column="skind"></property>
+		<property name="sresname" column="sresname"></property>
+		<property name="squestion" column="squestion"></property>
+		<property name="sresolve" column="sresolve"></property>
+		<property name="senergy" column="senergy"></property>
+		<property name="stime" column="stime"></property>
+		<property name="status" column="status"></property>
+		<property name="sremark" column="sremark"></property>
+		<property name="sdepartmentname" column="sdepartmentname"></property>
+		<property name="standardcharge" column="standardcharge"></property>
+		<property name="srealitycharge" column="srealitycharge"></property>
+		<property name="soverstandardcharge" column="soverstandardcharge"></property>
+		<property name="srealityovercharge" column="srealityovercharge"></property>
+	    <property name="sisclosecharge" column="sisclosecharge"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.intelligent.pojo.Device" table="t_device" lazy="false">
+		<id name="did" column="did">
+			<generator class="native"></generator>
+		</id>
+		<property name="dmoney" column="dmoney"></property>
+		<property name="dlab" column="dlab"></property>
+		<property name="dname1" column="dname1"></property>
+		<property name="dname2" column="dname2"></property>
+		<property name="dversion" column="dversion"></property>
+		<property name="dbuytime" column="dbuytime" type="date"></property>
+		<property name="dposition" column="dposition"></property>
+		<property name="duser" column="duser"></property>
+		<property name="dstatus" column="dstatus"></property>
+		<property name="dcode" column="dcode"></property>
+		<property name="dborrow" column="dborrow" type="date"></property>
+		<property name="dback" column="dback" type="date"></property>
+		<property name="ddname" column="ddname"></property>
+		<property name="dborrowname" column="dborrowname"></property>
+		<property name="dremark" column="dremark"></property>
+		<property name="doldnumber" column="doldnumber"></property>
+	</class>
+</hibernate-mapping>

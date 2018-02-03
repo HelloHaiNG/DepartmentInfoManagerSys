@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="cost" extends="struts-default">
+		<action name="cost_*" class="costAction" method="{1}">
+		    <result name="toAddPage">/jsp/cost/view/add.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="list">/jsp/cost/view/view.jsp</result>
+			<result name="viewByCid">/jsp/cost/view/viewByCid.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="deleteByCid">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="employee" extends="struts-default">
+		<action name="employee_*" class="employeeAction" method="{1}">
+		    <result name="selfInfo">/jsp/employee/self/view.jsp</result>
+			<result name="toAddPage">/jsp/employee/view/add.jsp</result>
+			<result name="judgeEnumber">/jsp/success.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="list">/jsp/employee/view/viewEmployee.jsp</result>
+			<result name="viewByEnumber">/jsp/employee/view/viewByEnumber.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="deleteByEnumber">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="listByOthers">/jsp/employee/view/viewEmployeeByOthers.jsp</result>
+			<result name="viewByEnumberByOthers">/jsp/employee/view/viewByEnumberByOthers.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

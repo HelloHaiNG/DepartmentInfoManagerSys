@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+   <bean id="reportAction" class="com.intelligent.action.ReportAction" scope="prototype">
+      <property name="reportService" ref="reportService"></property>
+      <property name="projectService" ref="projectService"></property>
+      <property name="pcbService" ref="pcbService"></property>
+      <property name="machineService" ref="machineService"></property>
+      <property name="softService" ref="softService"></property>
+      <property name="employeeService" ref="employeeService"></property>
+      <property name="employeeDeleteService" ref="employeeDeleteService"></property>
+      <property name="industryService" ref="industryService"></property>
+      <property name="costService" ref="costService"></property>
+      <property name="deviceService" ref="deviceService"></property>
+      <property name="supportService" ref="supportService"></property>
+   </bean>
+  <bean id="reportService" class="com.intelligent.service.ReportService">
+      <property name="reportDao" ref="reportDaoImpl"></property>
+  </bean>
+  <bean id="reportDaoImpl" class="com.intelligent.dao.impl.ReportDaoImpl">
+      <property name="sessionFactory" ref="sessionFactory"></property>
+  </bean>
+</beans>

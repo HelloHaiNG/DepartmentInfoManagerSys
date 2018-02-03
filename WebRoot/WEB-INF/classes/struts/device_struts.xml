@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="device" extends="struts-default">
+		<action name="device_*" class="deviceAction" method="{1}">
+		    <result name="toAddPage">/jsp/device/view/add.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="list">/jsp/device/view/view.jsp</result>
+			<result name="viewByDid">/jsp/device/view/viewByDid.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="deleteByDid">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="listByOthers">/jsp/device/view/viewByOthers.jsp</result>
+			<result name="viewByDidByOthers">/jsp/device/view/viewByDidByOthers.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

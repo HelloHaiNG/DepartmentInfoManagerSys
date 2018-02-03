@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="employeeDelete" extends="struts-default">
+		<action name="employeeDelete_*" class="employeeDeleteAction" method="{1}">
+			<result name="list">/jsp/employeedelete/viewEmployeeDelete.jsp</result>
+			<result name="viewByEnumber">/jsp/employeedelete/viewByEnumber.jsp</result>
+			<result name="deleteByEnumber">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="restore">/jsp/success.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

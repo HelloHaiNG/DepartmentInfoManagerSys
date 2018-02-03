@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="support" extends="struts-default">
+		<action name="support_*" class="supportAction" method="{1}">
+		    <result name="toAddPage">/jsp/support/view/add.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="listByEmployee">/jsp/support/view/viewByEmployee.jsp</result>
+			<result name="viewBySid">/jsp/support/view/viewBySid.jsp</result>
+			<result name="viewBySidByAdmin">/jsp/support/view/viewBySidByAdmin.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="updateByManager">/jsp/success.jsp</result>
+			<result name="list">/jsp/support/view/view.jsp</result>
+			<result name="listByOthers">/jsp/support/view/viewByOthers.jsp</result>
+			<result name="viewBySidByOthers">/jsp/support/view/viewBySidByOthers.jsp</result>
+			<result name="deleteBySid">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

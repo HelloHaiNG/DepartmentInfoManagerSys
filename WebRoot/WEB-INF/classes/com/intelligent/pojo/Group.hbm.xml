@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.Group" table="t_group" lazy="false">
+     <id name="gname" column="gname">
+         <generator class="assigned"></generator>
+     </id>
+     <set name="setEmployees" inverse="true" cascade="delete,save-update">
+         <key column="gid"></key>
+         <one-to-many class="com.intelligent.pojo.Employee"/>
+     </set>
+     <set name="setEmployeeDeletes" inverse="true" cascade="delete,save-update">
+         <key column="gid"></key>
+         <one-to-many class="com.intelligent.pojo.EmployeeDelete"/>
+     </set>
+   </class>
+</hibernate-mapping>

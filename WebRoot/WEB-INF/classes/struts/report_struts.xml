@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="report" extends="struts-default">
+		<!-- 登陆action -->
+		<action name="report_*" class="reportAction" method="{1}">
+			<!-- 登陆 -->
+			<result name="addProject">/jsp/success.jsp</result>
+			<result name="projectList">/jsp/success.jsp</result>
+			<result name="removeProject">/jsp/success.jsp</result>
+			<result name="reportProjectExcel">/jsp/success.jsp</result>
+			<result name="addEmployee">/jsp/success.jsp</result>
+			<result name="removeEmployee">/jsp/success.jsp</result>
+			<result name="reportEmployeeExcel">/jsp/success.jsp</result>
+			<result name="employeeList">/jsp/success.jsp</result>
+			<result name="addEmployeeDelete">/jsp/success.jsp</result>
+			<result name="removeEmployeeDelete">/jsp/success.jsp</result>
+			<result name="reportEmployeeDeleteExcel">/jsp/success.jsp</result>
+			<result name="employeeDeleteList">/jsp/success.jsp</result>
+			<result name="addIndustry">/jsp/success.jsp</result>
+			<result name="removeIndustry">/jsp/success.jsp</result>
+			<result name="listExcel">/jsp/success.jsp</result>
+			<result name="reportIndustryExcel">/jsp/success.jsp</result>
+			<result name="addCost">/jsp/success.jsp</result>
+			<result name="removeCost">/jsp/success.jsp</result>
+			<result name="listCostExcel">/jsp/success.jsp</result>
+			<result name="reportCostExcel">/jsp/success.jsp</result>
+			<result name="addDevice">/jsp/success.jsp</result>
+			<result name="removeDevice">/jsp/success.jsp</result>
+			<result name="listDeviceExcel">/jsp/success.jsp</result>
+			<result name="reportDeviceExcel">/jsp/success.jsp</result>
+			<result name="listSupportExcel">/jsp/success.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

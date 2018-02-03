@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+   <bean id="supportAction" class="com.intelligent.action.SupportAction" scope="prototype">
+      <property name="supportService" ref="supportService"></property>
+      <property name="projectService" ref="projectService"></property>
+      <property name="departmentService" ref="departmentService"></property>
+      <property name="employeeService" ref="employeeService"></property>
+  </bean>
+  <bean id="supportService" class="com.intelligent.service.SupportService">
+      <property name="supportDao" ref="supportDaoImpl"></property>
+  </bean>
+  <bean id="supportDaoImpl" class="com.intelligent.dao.impl.SupportDaoImpl">
+      <property name="sessionFactory" ref="sessionFactory"></property>
+  </bean>
+</beans>

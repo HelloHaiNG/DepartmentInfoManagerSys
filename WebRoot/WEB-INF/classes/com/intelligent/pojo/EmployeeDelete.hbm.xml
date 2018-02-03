@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.intelligent.pojo.EmployeeDelete" table="t_employeedelete"
+		lazy="false">
+		<id name="ednumber" column="ednumber">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="edname" column="edname"></property>
+		<property name="edpwd" column="edpwd"></property>
+		<property name="edsex" column="edsex"></property>
+		<property name="edphone1" column="edphone1"></property>
+		<property name="edphone2" column="edphone2"></property>
+		<property name="edmail" column="edmail"></property>
+		<property name="edworkplace" column="edworkplace"></property>
+		<property name="edposition" column="edposition"></property>
+		<property name="edremark" column="edremark"></property>
+		<property name="edmana" column="edmana"></property>
+		<property name="eddate" column="eddate"></property>
+		<property name="edschool" column="edschool"></property>
+		<property name="edduc" column="edduc"></property>
+		<property name="edids" column="edids"></property>
+		<many-to-one name="group" class="com.intelligent.pojo.Group"
+			column="gid"></many-to-one>
+	</class>
+</hibernate-mapping>

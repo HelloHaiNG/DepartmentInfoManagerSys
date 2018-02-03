@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.Project" table="t_project" lazy="false">
+     <id name="pnumber" column="pnumber">
+         <generator class="assigned"></generator>
+     </id>
+     <property name="pname" column="pname"></property>
+     <property name="ptime" column="ptime" type="date"></property>
+     <property name="pmapnumber" column="pmapnumber"></property>
+     <property name="pdutyname" column="pdutyname"></property>
+     <property name="pME" column="pME"></property>
+     <property name="pEE" column="pEE"></property>
+     <property name="pSW" column="pSW"></property>
+     <property name="premark" column="premark"></property>
+     <property name="pstatus" column="pstatus"></property>
+     <property name="producekind" column="producekind"></property>
+     <property name="pmothercode" column="pmothercode"></property>
+     <property name="pshortname" column="pshortname"></property>
+     <property name="place" column="place"></property>
+     <property name="pnum" column="pnum"></property>
+     <property name="po" column="po"></property>
+     <property name="period" column="period"></property>
+     <property name="pfinishtime" column="pfinishtime" type="date"></property>
+     <property name="papn" column="papn"></property>
+     <property name="psn" column="psn"></property>
+     <property name="pwords" column="pwords"></property>
+     <set name="setPcbs" inverse="true" cascade="delete,save-update">
+         <key column="pnumber"></key>
+         <one-to-many class="com.intelligent.pojo.Pcb"/>
+     </set>
+     <set name="setSofts" inverse="true" cascade="delete,save-update">
+         <key column="pnumber"></key>
+         <one-to-many class="com.intelligent.pojo.Soft"/>
+     </set>
+     <set name="setMachines" inverse="true" cascade="delete,save-update">
+         <key column="pnumber"></key>
+         <one-to-many class="com.intelligent.pojo.Machine"/>
+     </set>
+     <many-to-one name="user" class="com.intelligent.pojo.User" column="unumber"></many-to-one>
+    </class>
+</hibernate-mapping>

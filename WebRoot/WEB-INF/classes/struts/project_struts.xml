@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="project" extends="struts-default">
+		<action name="project_*" class="projectAction" method="{1}">
+			<result name="toAddPage">/jsp/project/view/addProject.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="listByUnumber">/jsp/project/view/viewProject.jsp</result>
+			<result name="viewByPnumber">/jsp/project/view/viewByPnumber.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="deleteByPnumber">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="list">/jsp/project/view/viewByEmployee.jsp</result>
+			<result name="viewByPnumberByEmployee">/jsp/project/view/view.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+		</action>
+	</package>
+</struts> 

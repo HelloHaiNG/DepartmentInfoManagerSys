@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.Soft" table="t_soft" lazy="false">
+     <id name="sid" column="sid">
+         <generator class="native"></generator>
+     </id>
+     <property name="snumber" column="snumber"></property>
+     <property name="sversion" column="sversion"></property>
+     <property name="sremark" column="sremark"></property>
+     <many-to-one name="project" class="com.intelligent.pojo.Project" column="pnumber"></many-to-one>
+  </class>
+</hibernate-mapping>

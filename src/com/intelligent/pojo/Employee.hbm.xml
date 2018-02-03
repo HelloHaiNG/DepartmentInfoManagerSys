@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.Employee" table="t_employee" lazy="false">
+     <id name="enumber" column="enumber">
+         <generator class="assigned"></generator>
+     </id>
+     <property name="ename" column="ename"></property>
+     <property name="epwd" column="epwd"></property>
+     <property name="esex" column="esex"></property>
+     <property name="ephone1" column="ephone1"></property>
+     <property name="ephone2" column="ephone2"></property>
+     <property name="email" column="email"></property>
+     <property name="eworkplace" column="eworkplace"></property>
+     <property name="eposition" column="eposition"></property>
+     <property name="eremark" column="eremark"></property>
+     <property name="emana" column="emana"></property>
+     <property name="edate" column="edate"></property>
+     <property name="eschool" column="eschool"></property>
+     <property name="educ" column="educ"></property>
+     <property name="eids" column="eids"></property>
+     <many-to-one name="group" class="com.intelligent.pojo.Group" column="gid"></many-to-one>
+   </class>
+</hibernate-mapping>

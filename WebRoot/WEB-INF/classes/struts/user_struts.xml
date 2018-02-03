@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" extends="struts-default">
+		<action name="user_*" class="userAction" method="{1}">
+			<!-- 登陆 -->
+			<result name="project">/jsp/project/index.jsp</result>
+			<result name="department">/jsp/department/index.jsp</result>
+			<result name="employee">/jsp/employee/index.jsp</result>
+			<result name="industry">/jsp/industry/index.jsp</result>
+			<result name="device">/jsp/device/index.jsp</result>
+			<result name="admin">/jsp/admin/index.jsp</result>
+			<result name="selfInfo">/jsp/user/self/selfInfo.jsp</result>
+			<result name="toUpdateInfoPage">/jsp/user/self/updateInfoPage.jsp</result>
+			<result name="update">/jsp/success.jsp</result>
+			<result name="toAddPage">/jsp/user/useraction/add.jsp</result>
+			<result name="add">/jsp/success.jsp</result>
+			<result name="list">/jsp/user/useraction/userList.jsp</result>
+			<result name="deleteByUnumber">/jsp/success.jsp</result>
+			<result name="delete">/jsp/success.jsp</result>
+			<result name="error">/jsp/error.jsp</result>
+			<result name="fail">/login.jsp</result>
+		</action>
+	</package>
+</struts> 

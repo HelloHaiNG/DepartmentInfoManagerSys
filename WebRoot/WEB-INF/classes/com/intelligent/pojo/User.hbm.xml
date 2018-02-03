@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.intelligent.pojo.User" table="t_user" lazy="false">
+     <id name="unumber" column="unumber">
+         <generator class="assigned"></generator>
+     </id>
+     <property name="username" column="username"></property>
+     <property name="upwd" column="upwd"></property>
+     <property name="urole" column="urole"></property>
+     <set name="setProjects" inverse="true" cascade="delete,save-update">
+         <key column="unumber"></key>
+         <one-to-many class="com.intelligent.pojo.Project"/>
+     </set>
+   </class>
+</hibernate-mapping>
